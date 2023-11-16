@@ -1,0 +1,519 @@
+
+/*HEADER SECTION*/
+.header-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.company-name {
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+}
+.company-name span {
+  font-size: 1.4rem;
+}
+
+.company-name i {
+  margin-right: 1rem;
+}
+
+.login-btn {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.2rem;
+  width: 7rem;
+  background-color:rgb(120, 192, 243);
+  border-style: none;
+  border-radius: 10px;
+  height: 2rem;
+  cursor: pointer;
+  color: white;
+  animation: slideInLeft 2.5s;
+  transition: 0.7s;
+}
+
+.login-btn:hover {
+  color: green;
+  background-color: whitesmoke;
+  box-shadow: 9px 9px 13px 6px rgba(0,0,0,0.1); /*box shadow appears slowly when the button is hovered*/
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.login-btn i {
+  margin-right: 0.5rem;
+}
+/***************/
+
+/*NAV*/
+.nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.feature-nav {
+  border-radius: 10px;
+  border-style: none;
+  width: 9rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+}
+
+.marketing {
+  font-style: italic;
+}
+
+.marketing i {
+  margin-left: 1rem;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  border-style: none;
+  transition: 1s;
+}
+
+.marketing i:hover {
+  box-shadow: 0 0 10px 5px #333;
+}
+
+/**************/
+
+/*MAIN-CONTENT-SHOWCASE*/
+
+.main-height {
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  gap: 3rem;
+}
+
+.main-content p {
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+.feature-description {
+  background-color: aliceblue;
+  height: 18.5rem;
+  border-radius: 10px;
+  width: 13rem;
+  animation: slideInLeft 2.5s ease-in-out;
+}
+
+.feature-description h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  
+}
+
+.feature-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+  color: white;
+  
+}
+
+.feature-btn button {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 10px;
+  background-color:rgb(120, 192, 243);
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.75s;
+}
+
+.hidden {
+  display: none;
+}
+
+.low-opacity {
+  opacity: 0.5;
+}
+
+.feature-btn button:hover {
+  color: green;
+  background-color: whitesmoke;
+  box-shadow: 9px 9px 13px 6px rgba(0,0,0,0.1); /*box shadow appears slowly when the button is hovered*/
+}
+
+.create-btn {
+  width: 100%;
+  height: 4.2rem;
+  border-radius: 10px;
+  color: #333;
+  background-color: rgb(226, 187, 114);
+  font-size: 1.10rem;
+  border-style: none;
+  opacity: 0.5;
+  transition: 0.75s;
+  cursor: pointer;
+}
+
+.create-btn:hover {
+  color: #fff;
+  background-color: orange;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 9px 9px 13px 6px rgba(0,0,0,0.1);
+}
+
+.company-image img {
+  width: 500px;
+  border-radius: 10px;
+  animation: slideInRight 2.5s ease-in-out;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/*INSTRUCTIONS SECTION (PART OF MAIN CONTENT)*/
+.instructions-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  gap: 2rem;
+}
+
+.instructions-feature {
+  background-color: rgb(196, 248, 190);
+  text-align: center;
+  width: 16rem;
+  border-radius: 10px;
+  border: 2px solid rgba(128, 100, 100, 0.5);
+}
+
+/*FEATURES(PART OF MAIN)*/
+.features-collection {
+  display: flex;
+  height: 35rem;
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.feature {
+  background-color: rgb(241, 227, 227);
+  width: 11rem;
+  height: 3rem;
+  margin-top: 5rem;
+  padding-top: 30px;
+  border-radius: 10px;
+}
+
+/*****************/
+
+
+/* ABOUT US SECTION*/
+
+.about-height {
+  height: 30vh;
+}
+
+.about-height h1 {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.about-container img {
+  border-radius: 10px;
+  margin-left: 3rem;
+  width: 500px;
+}
+
+.about-company {
+  width: 15rem;
+  background-color: aliceblue;
+  border-radius: 10px;
+  height: 15rem;
+  animation: slideInLeft 2.5s ease-in-out;
+}
+
+.about-company h2 {
+  text-align: center;
+}
+
+.about-company p {
+  font-weight: 500;
+  font-family: sans-serif;
+  margin-left: 0.5rem;
+}
+
+.contact-btn {
+  width: 100%;
+  height: 4.2rem;
+  border-radius: 10px;
+  color: #333;
+  background-color: rgb(226, 187, 114);
+  font-size: 1.25rem;
+  border-style: none;
+  opacity: 0.7;
+  margin-top: 2rem;
+  transition: 0.75s;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  color: #fff;
+  background-color: orange;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 9px 9px 13px 6px rgba(0,0,0,0.1);
+}
+
+/**********************/
+
+/*CONTACT SECTION*/
+.contact-height {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-height img {
+  width: 400px;
+  height: auto;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.self-improving {
+  width: 25rem;
+  height: 10rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+textarea {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  width: 25rem;
+  height: 10rem;
+  resize: none;
+  transition: border-color 0.5s ease;
+  box-sizing: border-box;
+}
+
+textarea:hover {
+  border-color: green;
+}
+
+.message-btn {
+  height: 4.2rem;
+  border-radius: 10px;
+  color: #333;
+  background-color: rgb(226, 187, 114);
+  font-size: 1.55rem;
+  border-style: none;
+  opacity: 0.7;
+  margin-top: 1rem;
+  width: 10rem;
+  transition: 0.75s;
+  cursor: pointer;
+}
+
+.message-btn:hover {
+  color: #fff;
+  background-color: orange;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 9px 9px 13px 6px rgba(0,0,0,0.1);
+}
+/***********/
+
+/*FOOTER SECTION*/
+.footer-container {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  height: 15rem;
+  margin-bottom: -1rem;
+  gap: 20rem;
+}
+
+.footer-company {
+  margin-top: 5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 2rem;
+}
+
+.footer-company i {
+  margin-right: 1rem;
+}
+
+.contact-details {
+  width: 20rem;
+}
+.contact-information {
+  text-align: center;
+}
+
+.contact-information i {
+  cursor: pointer;
+}
+
+.contact-information p {
+  cursor: pointer;
+}
+
+/*RESPONSIVENESS HANDLING*/
+
+@media screen and (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    width: 15rem;
+  }
+
+  .login-btn {
+    margin-left: 18rem;
+  }
+
+  .nav-container {
+    width: 15rem;
+  }
+
+  .feature-nav {
+    display: none;
+  }
+
+  .main-content img {
+    width: 220px;
+    height: 365px;
+    margin-left: -2rem;
+  }
+
+  .feature-description {
+    height: 18.2rem;
+  }
+  .feature-description p {
+    height: 14.7rem;
+    font-size: 0.85rem;
+  }
+  .feature-description h3 {
+    font-size: 1rem;
+  }
+
+  .company-image img {
+    width: 200px;
+    height: 300px;
+  }
+
+  .second-image {
+    margin-left: -2rem;
+  }
+
+  .about-height {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .about-company {
+    width: 11rem;
+    height: 14rem;
+  }
+
+  .contact-btn {
+    margin-top: 2.2rem;
+  }
+  .about-company h2 {
+    font-size: 1rem;
+  }
+  .about-company p {
+    font-size: 0.85rem;
+    width: 11rem;
+  }
+
+  .features-collection {
+    height: 35rem;
+  }
+
+  .row {
+    height: 20rem;
+  }
+
+  .feature {
+    margin-top: 1rem;
+    height: 3.5rem;
+    width: 5.5rem;
+  }
+
+  .contact-height img {
+    height: 200px;
+  }
+
+  .footer-company-container {
+    font-size: 0.50rem;
+    width: 12rem;
+  }
+
+  .footer-company {
+    font-size: 1.5rem;
+  }
+
+  .contact-details {
+    font-size: 0.70rem;
+    margin-left: -13rem;
+  }
+
+  .footer-container {
+    width: 25rem;
+  }
+
+  .contact-information {
+    margin-top: 4rem;
+  }
+
+}
