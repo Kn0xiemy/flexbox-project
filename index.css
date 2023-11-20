@@ -407,6 +407,21 @@ textarea:hover {
   cursor: pointer;
 }
 
+/*ABOUT US PAGE*/
+.history-container {
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 49.20rem;
+  margin: auto;
+}
+
+.history-about {
+  height: 70vh;
+}
+
 /*RESPONSIVENESS HANDLING*/
 
 @media screen and (max-width: 600px) {
