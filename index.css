@@ -22,19 +22,19 @@
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.2rem;
   width: 7rem;
-  background-color:rgb(120, 192, 243);
+  background-color: lightblue;
   border-style: none;
   border-radius: 10px;
   height: 2rem;
   cursor: pointer;
-  color: white;
+  color: #333;
   animation: slideInLeft 2.5s;
   transition: 0.7s;
 }
 
 .login-btn:hover {
-  color: green;
-  background-color: whitesmoke;
+  color: white;
+  background-color: #03b8ff;
   box-shadow: 9px 9px 13px 6px rgba(0,0,0,0.1); /*box shadow appears slowly when the button is hovered*/
 }
 
@@ -136,8 +136,8 @@
   width: 10rem;
   height: 2rem;
   border-radius: 10px;
-  background-color:rgb(120, 192, 243);
-  color: white;
+  background-color: lightblue;
+  color: #333;
   font-weight: 700;
   font-size: 1rem;
   border-style: none;
@@ -154,8 +154,8 @@
 }
 
 .feature-btn button:hover {
-  color: green;
-  background-color: whitesmoke;
+  color: white;
+  background-color: #03b8ff;
   box-shadow: 9px 9px 13px 6px rgba(0,0,0,0.1); /*box shadow appears slowly when the button is hovered*/
 }
 
@@ -164,18 +164,18 @@
   height: 4.2rem;
   border-radius: 10px;
   color: #333;
-  background-color: rgb(226, 187, 114);
+  background-color: lightblue;
   font-size: 1.10rem;
   border-style: none;
-  opacity: 0.5;
+  opacity: 1;
   transition: 0.75s;
   cursor: pointer;
 }
 
 .create-btn:hover {
   color: #fff;
-  background-color: orange;
   border-style: solid;
+  background-color: #03b8ff;
   border-width: 1px;
   box-shadow: 9px 9px 13px 6px rgba(0,0,0,0.1);
 }
@@ -287,7 +287,7 @@
   height: 4.2rem;
   border-radius: 10px;
   color: #333;
-  background-color: rgb(226, 187, 114);
+  background-color: lightblue;
   font-size: 1.25rem;
   border-style: none;
   opacity: 0.7;
@@ -298,7 +298,7 @@
 
 .contact-btn:hover {
   color: #fff;
-  background-color: orange;
+  background-color: #03b8ff;
   border-style: solid;
   border-width: 1px;
   box-shadow: 9px 9px 13px 6px rgba(0,0,0,0.1);
@@ -351,7 +351,7 @@ textarea:hover {
   height: 4.2rem;
   border-radius: 10px;
   color: #333;
-  background-color: rgb(226, 187, 114);
+  background-color: lightblue;
   font-size: 1.55rem;
   border-style: none;
   opacity: 0.7;
@@ -363,7 +363,7 @@ textarea:hover {
 
 .message-btn:hover {
   color: #fff;
-  background-color: orange;
+  background-color: #03b8ff;
   border-style: solid;
   border-width: 1px;
   box-shadow: 9px 9px 13px 6px rgba(0,0,0,0.1);
