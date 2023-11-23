@@ -21,7 +21,7 @@ Hello! This is a small-time landing page project about a QR company which specia
    - Additional effects may have been used, where the features button has each row appear from the left or right for example.
    - Making the project responsive with media queries was also a bit of a challenge.
 
-   !*PATCH 23/11/2023*!
+   *PATCH 23/11/2023*
    - Added additional meta tags for the project on the pages to optimize SE.
    - Adjusted Title tags for SE optimization.
    - Separated landing page into 4 different pages.
