@@ -1,6 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 
+/*ANIMATIONS*/
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/*****************/
 /*HEADER SECTION*/
-.header-container {
+.header-container { 
   display: flex;
   justify-content: space-evenly;
   margin-top: 2rem;
@@ -9,7 +47,9 @@
 .company-name {
   font-weight: 700;
   font-family: 'Courier New', Courier, monospace;
+  animation: slideFromTop 2.50s;
 }
+
 .company-name span {
   font-size: 1.4rem;
 }
@@ -38,22 +78,10 @@
   box-shadow: 9px 9px 13px 6px rgba(0,0,0,0.1); /*box shadow appears slowly when the button is hovered*/
 }
 
-@keyframes slideInLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
 .login-btn i {
   margin-right: 0.5rem;
 }
 /***************/
-
 /*NAV*/
 .nav-container {
   display: flex;
@@ -63,16 +91,29 @@
   text-align: center;
 }
 
+.nav-container a {
+  text-decoration: none;
+  color: #333;
+}
+
 .feature-nav {
   border-radius: 10px;
   border-style: none;
   width: 9rem;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 700;
+  transition: 0.75s;
+  height: 1.25rem;
+}
+
+.feature-nav:hover {
+  background-color: lightgrey;
+  outline: 1px solid;
 }
 
 .marketing {
-  font-style: italic;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
 }
 
 .marketing i {
@@ -86,9 +127,7 @@
 .marketing i:hover {
   box-shadow: 0 0 10px 5px #333;
 }
-
 /**************/
-
 /*MAIN-CONTENT-SHOWCASE*/
 
 .main-height {
@@ -105,6 +144,7 @@
 .main-content p {
   font-weight: 500;
   margin-left: 0.5rem;
+  font-size: 0.90rem;
 }
 
 .feature-description {
@@ -113,6 +153,7 @@
   border-radius: 10px;
   width: 13rem;
   animation: slideInLeft 2.5s ease-in-out;
+  font-family: 'Roboto', sans-serif;
 }
 
 .feature-description h3 {
@@ -156,6 +197,7 @@
 .feature-btn button:hover {
   color: white;
   background-color: #03b8ff;
+  outline: 1px solid;
   box-shadow: 9px 9px 13px 6px rgba(0,0,0,0.1); /*box shadow appears slowly when the button is hovered*/
 }
 
@@ -166,10 +208,11 @@
   color: #333;
   background-color: lightblue;
   font-size: 1.10rem;
-  border-style: none;
+  border-style:none;
   opacity: 1;
   transition: 0.75s;
   cursor: pointer;
+  margin-top: 0.60rem;
 }
 
 .create-btn:hover {
@@ -184,17 +227,6 @@
   width: 500px;
   border-radius: 10px;
   animation: slideInRight 2.5s ease-in-out;
-}
-
-@keyframes slideInRight {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
 
 /*INSTRUCTIONS SECTION (PART OF MAIN CONTENT)*/
@@ -227,7 +259,6 @@
   flex-direction: column;
 }
 
-
 .feature {
   background-color: rgb(241, 227, 227);
   width: 11rem;
@@ -236,12 +267,8 @@
   padding-top: 30px;
   border-radius: 10px;
 }
-
 /*****************/
-
-
 /* ABOUT US SECTION*/
-
 .about-height {
   height: 30vh;
 }
@@ -291,7 +318,7 @@
   font-size: 1.25rem;
   border-style: none;
   opacity: 0.7;
-  margin-top: 2rem;
+  margin-top: 2.4rem;
   transition: 0.75s;
   cursor: pointer;
 }
@@ -303,9 +330,7 @@
   border-width: 1px;
   box-shadow: 9px 9px 13px 6px rgba(0,0,0,0.1);
 }
-
 /**********************/
-
 /*CONTACT SECTION*/
 .contact-height {
   height: 80vh;
@@ -368,8 +393,7 @@ textarea:hover {
   border-width: 1px;
   box-shadow: 9px 9px 13px 6px rgba(0,0,0,0.1);
 }
-/***********/
-
+/*****************/
 /*FOOTER SECTION*/
 .footer-container {
   display: flex;
@@ -406,24 +430,183 @@ textarea:hover {
 .contact-information p {
   cursor: pointer;
 }
-
+/****************/
 /*ABOUT US PAGE*/
 .history-container {
-  background-color: red;
+  background-color: aliceblue;
   display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 10px;
   width: 49.20rem;
   margin: auto;
+  height: 25rem;
+  margin-top: 4rem;
+}
+
+.about-page {
+  height: 20.6rem;
+}
+
+.history {
+  margin-left: 1rem;
+}
+
+.history-container h2 {
+  width: 20rem;
 }
 
 .history-about {
   height: 70vh;
 }
+/***************/
+/*BLOG SECTION*/
+aside {
+  margin-left: 5rem;
+  height: 30rem;
+}
 
+.blog-height {
+  height: 80vh;
+}
+
+.blog-image img {
+  height: 475px;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 15px 17px 33px 5px rgba(0,0,0,0.1);
+}
+
+.blog-image {
+  height: 400px;
+  margin-top: 1.40rem;
+  animation: slideInLeft 2s;
+}
+.blog-content {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: center;
+  height: 40rem;
+}
+
+.blog-collection {
+  width: 20rem;
+}
+
+.blog {
+  margin-bottom: 3rem;
+  border-radius: 5px;
+  transition: 0.55s;
+  cursor: pointer;
+  animation: slideInRight 2s;
+  font-family: 'Roboto', sans-serif;
+}
+
+.blog:hover {
+  background-color: rgb(204, 201, 201);
+}
+
+.blog p {
+  margin-left: 1rem;
+}
+
+.blog h4 {
+  margin-left: 1rem;
+  color:darkgreen;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.card {
+ width: 250px;
+ transition: 0.50s;
+ cursor: pointer;
+ border-radius: 10px;
+}
+
+.card h4 {
+  color: darkgreen;
+}
+
+.card:hover {
+  background-color: rgb(204, 201, 201);
+  box-shadow: 0px 4px 24px 30px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+}
+/***************/
+/*CONTACT PAGE*/
+.contact-page-btn {
+  height: 4.2rem;
+  border-radius: 10px;
+  color: #333;
+  background-color: lightblue;
+  font-size: 1.55rem;
+  border-style: none;
+  opacity: 0.7;
+  margin-top: 1rem;
+  width: 10rem;
+  transition: 0.75s;
+  cursor: pointer;
+}
+
+.contact-page-btn:hover {
+  color: #fff;
+  background-color: #03b8ff;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 9px 9px 13px 6px rgba(0,0,0,0.1);
+}
+
+.contact-page img {
+  border-radius: 10px;
+  margin-bottom: 5rem;
+  box-shadow: 15px 17px 33px 5px rgba(0,0,0,0.1);
+}
+
+label {
+  font-size: 1.25rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+#fname {
+  width: 300px;
+  margin-bottom: 1rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+
+#lname {
+  margin-bottom: 1rem;
+  width: 300px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+
+#contact-text {
+  height: 200px;
+  width: 300px;
+  border-width: 1.50px;
+  border-radius: 5px;
+}
+
+form {
+  padding: 0;
+  margin: 0;
+}
+/**************************/
 /*RESPONSIVENESS HANDLING*/
-
 @media screen and (max-width: 600px) {
   .header-container {
     flex-direction: column;
@@ -453,7 +636,7 @@ textarea:hover {
   }
   .feature-description p {
     height: 14.7rem;
-    font-size: 0.85rem;
+    font-size: 0.65rem;
   }
   .feature-description h3 {
     font-size: 1rem;
@@ -530,5 +713,5 @@ textarea:hover {
   .contact-information {
     margin-top: 4rem;
   }
-
 }
+/******************/

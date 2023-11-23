@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="QR Company Services">
+    <meta name="keywords" content="QR, Scan, Menu, Connect, Blog, News, Update">
+    <script
+      src="https://kit.fontawesome.com/091865038a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css" />
+    <title>Welcome To The Blog Page</title> <!--Longer title as search engines will display 50-60 characters. Better optimization-->
+  </head>
+  <body>
+    <!--HEADER-->
+    <header>
+      <div class="header-container">
+        <div class="company-name">
+          <i class="fa-solid fa-qrcode fa-2xl"></i><span>The QR Company</span>
+        </div>
+        <button class="login-btn" tabindex="1">
+          <i class="fa-solid fa-arrow-right-from-bracket" role="link"></i>Login
+        </button>
+      </div>
+    </header>
+    <!-------->
+    <!--NAVBAR-->
+    <nav>
+      <div class="nav-container">
+        <div class="marketing">
+          Feature Recommendation <i class="fa-solid fa-arrow-down"></i>
+        </div>
+        <a href="/index.html">
+          <div class="feature-nav" tabindex="2" role="button">Home</div>
+        </a>
+
+        <a href="/other pages/blog.html">
+          <div class="feature-nav" tabindex="3" role="button">Blog</div>
+        </a>
+
+        <a href="/other pages/about.html">
+          <div class="feature-nav" tabindex="4" role="button">About Us</div>
+        </a>
+
+        <a href="/other pages/contact.html">
+          <div class="feature-nav" tabindex="5" role="button">Contact</div>
+        </a>
+        
+      </div>
+    </nav>
+    <!------->
+    <!-------------Main------------>
+    <section class="blog-height">
+      <div class="blog-content">
+        <div class="blog-image">
+          <img src="/assets/blog-photo.jpg" alt="blog-image"/>
+        </div>
+        <aside>
+          <div class="blog-collection">
+            <div class="blog blog-one" tabindex="6" role="link">
+              <h4>Where we started.</h4>
+              <p>Lorem ipsum dolor sit amet. Dolor ipsum lorem Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="blog blog-two" tabindex="7" role="link">
+              <h4>What makes QR special?</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus maxime maiores fugit.</p>
+            </div>
+            <div class="blog blog-three" tabindex="8" role="link">
+              <h4>How AI can contribute</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, qui hic.</p>
+            </div>
+            <div class="blog blog-four" tabindex="9" role="link">
+              <h4>Our Q3 Roadmap</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, neque!</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <div class="card-container">
+        <div class="card" tabindex="10">
+          <img src="/assets/article-one.jpg" alt="qr-code-image" role="link">
+          <h4>The Rise of QR Demand</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, deserunt.</p>
+        </div>
+        <div class="card" tabindex="11">
+          <img src="/assets/article-two.jpg" alt="desk-image" role="link">
+          <h4>Healthy Workspace Environment</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, maxime!</p>
+        </div>
+        <div class="card" tabindex="12">
+          <img src="/assets/article-three.jpg" alt="marketing-image" role="link">
+          <h4>Growing Technology Trends</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, temporibus?</p>
+        </div>
+      </div>
+    </section>
+    <!--Footer-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-company-container">
+          <div class="footer-company">
+            <i class="fa-solid fa-qrcode fa-2xl"></i>The QR Company
+          </div>
+          <p>Copyright Reserved 2023 &copy;</p>
+        </div>
+        <div class="contact-details">
+          <div class="contact-information">
+            <h3>Contact Information</h3>
+            <p><i class="fa-solid fa-phone" role="link"></i> +1 702 572 932</p>
+            <p><i class="fa-solid fa-envelope" role="link"></i> theqrcompany@example.com</p>
+            <p><i class="fa-brands fa-x-twitter" role="link"></i> Twitter</p>
+            <p><i class="fa-brands fa-square-instagram" role="link"></i> Instagram</p>
+            <p><i class="fa-brands fa-telegram" role="link"></i> Telegram</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!------------>
+    <script src="/functionality.js  "></script>
+  </body>
 </html>

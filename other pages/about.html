@@ -3,62 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="QR Company Services">
+  <meta name="keywords" content="QR, Scan, Menu, Connect, History, Products">
   <script src="https://kit.fontawesome.com/091865038a.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/index.css">
-  <title>About Us</title>
+  <title>Our About Us Page</title> <!--Longer title as search engines will display 50-60 characters. Better optimization-->
 </head>
 <body>
+  <!----HEADER----->
   <header>
     <div class="header-container">
-      <div class="company-name"><i class="fa-solid fa-qrcode fa-2xl"></i><span>The QR Company</span></div><!--Will animate the QR later-->
-      <button class="login-btn"><i class="fa-solid fa-arrow-right-from-bracket"></i>Login</button>
+      <div class="company-name"><i class="fa-solid fa-qrcode fa-2xl"></i><span>The QR Company</span></div>
+      <button class="login-btn" tabindex="1"><i class="fa-solid fa-arrow-right-from-bracket" role="link"></i>Login</button>
     </div>
   </header>
-
+  <!------------->
+  <!---NAVBAR---->
   <nav>
     <div class="nav-container">
       <div class="marketing">Feature Recommendation <i class="fa-solid fa-arrow-down"></i></div>
-      <div class="feature-nav">Website URL</div>
-      <div class="feature-nav">Business</div>
-      <div class="feature-nav">Menu</div>
-      <div class="feature-nav">Invitations</div>
+      <a href="/index.html">
+        <div class="feature-nav" tabindex="2" role="button">Home</div>
+      </a>
+
+      <a href="/other pages/blog.html">
+        <div class="feature-nav" tabindex="3" role="button">Blog</div>
+      </a>
+
+      <a href="/other pages/about.html">
+        <div class="feature-nav" tabindex="4" role="button">About Us</div>
+      </a>
+
+      <a href="/other pages/contact.html">
+        <div class="feature-nav" tabindex="5" role="button">Contact</div>
+      </a>
     </div>
   </nav>
-<!--About section-->
+  <!--------->
+  <!--About section-->
   <section class="about-height history-about">
     <div class="about-container">
-      <div class="about-company">
+      <div class="about-company about-page">
         <h2>Who are we?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam qui porro pariatur exercitationem itaque perferendis? Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, qui.</p>
-        <button class="contact-btn">Get in Touch</button>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam qui porro pariatur exercitationem itaque perferendis? Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae modi doloribus! Cupiditate voluptas odio, ratione ea repellendus nostrum facilis.
+        </p>
       </div>
-      <div class="company-image second-image"><img src="/assets/about-us.jpg" alt=""></div>
+      <div class="company-image second-image"><img src="/assets/about-us.jpg" alt="company-image"></div>
     </div>
     <div class="history-container">
       <div class="history">
-        <h4>Where we started.</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ex.</p>
+        <h2>Where we started.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum cumque a error? Asperiores nemo, mollitia, officia iste quod itaque quia esse ut voluptatem exercitationem inventore et consectetur earum corporis eligendi cupiditate. Corporis natus unde eaque quam est, ullam mollitia suscipit et, qui impedit laboriosam in aspernatur id nulla at rerum consequuntur molestiae excepturi, quia libero consectetur? Ad tenetur voluptatibus esse, dolorem ex reiciendis, quasi accusantium culpa magnam ea sunt consequatur ipsum voluptate ipsa delectus iusto optio temporibus soluta deleniti rem hic quia vitae. Quidem dolore fugit inventore nihil, aliquam possimus velit, ducimus doloremque itaque unde debitis voluptatem quas quod atque sapiente iste repudiandae cupiditate vel vitae repellat labore explicabo aperiam. Illum fugit aut corrupti sunt odio, obcaecati temporibus earum unde, voluptate nulla exercitationem vitae quis ipsum sint quas veniam. Impedit quae mollitia, suscipit aspernatur ab sint itaque culpa quas quis expedita quo optio perspiciatis, illo ipsa vitae ex harum aliquam? Aspernatur ullam optio corrupti alias cumque, nemo expedita obcaecati mollitia hic a assumenda provident debitis officia? Possimus, culpa maxime! Mollitia unde, eius, necessitatibus neque iure recusandae voluptatem totam et error maxime, nobis deserunt. Minus illo neque vel quaerat nostrum modi dicta temporibus dolorum natus deleniti provident accusantium, asperiores at tempora dolore a repellendus quod eveniet minima cumque perspiciatis ea doloremque nisi? Ad deleniti quae voluptates quaerat quis sit obcaecati labore!
+        </p>
       </div>
     </div>
   </section>
   <!------------>
-
-  <!--Contact-->
-  <section class="contact-height">
-    <img src="/assets/feedback.png" alt="">
-    <div class="contact-container">
-      <div class="self-improving">
-        <h3>We are always seeking improvement!</h3>
-        <p>Our company has had the mindset to always accept criticism and adapt to the ever-changing world.</p>
-      </div>
-      <textarea class="feedback-form" name="feedback-form" cols="30" rows="10" placeholder="Let us know what you would like us to improve upon..."></textarea>
-      <button class="message-btn">Submit</button>
-    </div>
-    
-  </section> 
-  <!----------->
-
   <!--Footer-->
   <footer>
     <div class="footer-container">
@@ -69,11 +72,11 @@
       <div class="contact-details">
         <div class="contact-information">
           <h3>Contact Information</h3>
-          <p><i class="fa-solid fa-phone"></i> +1 702 572 932</p>
-          <p><i class="fa-solid fa-envelope"></i> theqrcompany@example.com</p>
-          <p><i class="fa-brands fa-x-twitter"></i> Twitter</p>
-          <p><i class="fa-brands fa-square-instagram"></i> Instagram</p>
-          <p><i class="fa-brands fa-telegram"></i> Telegram</p>
+          <p><i class="fa-solid fa-phone" role="link"></i> +1 702 572 932</p>
+          <p><i class="fa-solid fa-envelope" role="link"></i> theqrcompany@example.com</p>
+          <p><i class="fa-brands fa-x-twitter" role="link"></i> Twitter</p>
+          <p><i class="fa-brands fa-square-instagram" role="link"></i> Instagram</p>
+          <p><i class="fa-brands fa-telegram" role="link"></i> Telegram</p>
         </div>
       </div>
     </div>

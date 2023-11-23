@@ -3,9 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
+  <meta name="description" content="QR Company Services">
+  <meta name="keywords" content="QR, Scan, Menu, Connect, Contact, Support">
+  <script src="https://kit.fontawesome.com/091865038a.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/index.css">
+  <title>Get In Touch With Us</title> <!--Longer title as search engines will display 50-60 characters. Better optimization-->
 </head>
 <body>
-  
+  <!--HEADER SECTION-->
+  <header>
+    <div class="header-container">
+      <div class="company-name"><i class="fa-solid fa-qrcode fa-2xl"></i><span>The QR Company</span></div>
+      <button class="login-btn" tabindex="1"><i class="fa-solid fa-arrow-right-from-bracket" role="link"></i>Login</button>
+    </div>
+  </header>
+  <!----------------->
+  <!--NAVBAR-->
+  <nav>
+    <div class="nav-container">
+      <div class="marketing">Feature Recommendation <i class="fa-solid fa-arrow-down"></i></div>
+      <a href="/index.html">
+        <div class="feature-nav" tabindex="2" role="button">Home</div>
+      </a>
+
+      <a href="blog.html">
+        <div class="feature-nav" tabindex="3" role="button">Blog</div>
+      </a>
+
+      <a href="about.html">
+        <div class="feature-nav" tabindex="4" role="button">About Us</div>
+      </a>
+
+      <a href="contact.html">
+        <div class="feature-nav" tabindex="5" role="button">Contact</div>
+      </a>
+
+    </div>
+  </nav>
+<!-------->
+<!--CONTACT-->
+<section class="contact-height contact-page">
+  <img src="/assets/contact-us-image.jpg" alt="feedback-image">
+  <div class="contact-container">
+    <div class="self-improving">
+      <h2>Have something you wish to discuss with us?</h2>
+      <p>We're working with a 24/7 customer support to handle any enquiries you might have with us!</p>
+    </div>
+    <form action="" type="text">
+      <label for="fname">First Name</label><br>
+      <input type="text" id="fname" name="fname" tabindex="6"><br>
+      <label for="lname">Last Name</label><br>
+      <input type="text" id="lname" name="lname" tabindex="7"><br>
+      <input type="text" id="contact-text" name="contact-text">
+    </form>
+    <button class="contact-page-btn" role="alert">Submit</button>
+  </div>
+</section> 
+<!----------->
+<!--FOOTER-->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-company-container">
+        <div class="footer-company"><i class="fa-solid fa-qrcode fa-2xl"></i>The QR Company</div>
+        <p>Copyright Reserved 2023 &copy;</p>
+      </div>
+      <div class="contact-details">
+        <div class="contact-information">
+          <h3>Contact Information</h3>
+          <p><i class="fa-solid fa-phone" role="link"></i> +1 702 572 932</p>
+          <p><i class="fa-solid fa-envelope" role="link"></i> theqrcompany@example.com</p>
+          <p><i class="fa-brands fa-x-twitter" role="link"></i> Twitter</p>
+          <p><i class="fa-brands fa-square-instagram" role="link"></i> Instagram</p>
+          <p><i class="fa-brands fa-telegram" role="link"></i> Telegram</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!------------>
+  <script src="/functionality.js"></script>
 </body>
 </html>
