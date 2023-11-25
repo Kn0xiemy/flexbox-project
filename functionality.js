@@ -28,5 +28,3 @@ $(document).ready(function() { // when submitting text in the form - an alert ap
     alert("Thanks for reaching out! We'll have someone respond to your question within 24 hours.")
   })
 })
-
-
